@@ -10,26 +10,26 @@ questions = [
     //personal
     {
         "id": "full-legal-name",
-        "question": "Full legal name?",
+        "question": "Full Legal Name",
         "name": true,
         "required": true
     },
     {
         "id": "date-of-birth",
-        "question": "Date of birth?",
+        "question": "Date of Birth",
         "type": "date",
         "required": true
     },
     //contact
     {
         "id": "email-address",
-        "question": "Email address?",
+        "question": "Email Address",
         "type": "email",
         "required": true
     },
     {
         "id": "phone-number",
-        "question": "Phone number?",
+        "question": "Phone Number",
         "type": "tel",
         "phone": true,
         "required": true
@@ -37,14 +37,14 @@ questions = [
     //address
     {
         "id": "street-address",
-        "question": "Address?",
+        "question": "Street Address",
         "address": true,
         "required": true
     },
     //employment
     {
         "id": "currently-employed",
-        "question": "Currently employed?",
+        "question": "Current Employment Status",
         "options": [
             {
                 "text": "Yes",
@@ -61,12 +61,12 @@ questions = [
     },
     {
         "id": "employer-name",
-        "question": "Employer's name?",
+        "question": "Name of Employer",
         "required": true
     },
     {
         "id": "income-type",
-        "question": "Hourly or salaried income?",
+        "question": "Income Type",
         "required": true,
         "options": [
             {
@@ -84,7 +84,7 @@ questions = [
     //marriage
     {
         "id": "marital-status",
-        "question": "Marital status?",
+        "question": "Current Marital Status",
         "options": [
             {
                 "text": "Married",
@@ -112,7 +112,7 @@ questions = [
     //case background
     {
         "id": "case-description",
-        "question": "Please briefly describe the reason you're seeking legal advice.",
+        "question": "Case Overview",
         "required": true
     },
     //conclusion
@@ -122,6 +122,8 @@ questions = [
         "end": true
     }
 ];
+
+
 
 const test_questions = [
     {

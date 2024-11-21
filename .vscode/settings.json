@@ -1,0 +1,6 @@
+{
+    "wca.backendProvider": "ollama",
+    "wca.local.chatModel": "",
+    "wca.local.codeGenModel": "granite3-dense",
+    "codellm.provider": "ollama"
+}
