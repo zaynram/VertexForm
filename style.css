@@ -1,0 +1,52 @@
+body {
+    font-family: "Reddit Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  #form-container {
+    max-width: 65%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #question-area {
+    margin-bottom: 10px;
+  }
+  
+  #answer-area {
+    margin-right: 10px;
+  }
+  
+  #answer-text {
+    min-width: 100%;
+    font-family: "Reddit Sans", sans-serif;
+  }
+
+  #progress-bar {
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  #progress-fill {
+    height: 100%;
+    background-color: #638065;
+    width: 0%;
+  }
+  
+  #next-button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #638065;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    max-height: fit-content;
+  }
