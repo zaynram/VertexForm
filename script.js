@@ -49,12 +49,12 @@ questions = [
             {
                 "text": "Yes",
                 "nextQuestionId": "employer-name",
-                "type": "radio"
+                "type": "button"
             },
             {
                 "text": "No",
                 "nextQuestionId": "marital-status",
-                "type": "radio"
+                "type": "button"
             }
         ],
         "required": true
@@ -72,12 +72,12 @@ questions = [
             {
                 "text": "Hourly",
                 "nextQuestionId": "employer-name",
-                "type": "radio"
+                "type": "button"
             },
             {
                 "text": "Salary",
                 "nextQuestionId": "marital-status",
-                "type": "radio"
+                "type": "button"
             }
         ]
     },
@@ -89,22 +89,22 @@ questions = [
             {
                 "text": "Married",
                 "nextQuestionId": "spouse-legal-name",
-                "type": "radio"
+                "type": "button"
             },
             {
                 "text": "Single",
                 "nextQuestionId": "section-end",
-                "type": "radio"
+                "type": "button"
             },
             {
                 "text": "Separated",
                 "nextQuestionId": "section-end",
-                "type": "radio"
+                "type": "button"
             },
             {
                 "text": "Other",
                 "nextQuestionId": "elaborate",
-                "type": "radio"
+                "type": "button"
             }
         ],
         "required": true
@@ -119,7 +119,8 @@ questions = [
     {
         "id": "section-end",
         "question": "Thank you for your time! Please review your information and ensure it is accurate.<br>",
-        "end": true
+        "review": true,
+        "options": []
     }
 ];
 
@@ -187,7 +188,7 @@ function initForm() {
 
 // Display the current question
 function displayQuestion(index) {
-    questions = test_questions;
+    //questions = test_questions;
     const question = questions[index];
     document.getElementById("current-question").innerHTML = `<h4>Q. ${question.question}</h4>`;
     document.getElementById("next-button").style.marginTop = "20px";
@@ -399,7 +400,6 @@ function displayQuestion(index) {
                             suggestion.textContent = address.display_name;
                             suggestion.addEventListener('click', () => {
                                 console.log(address.display_name);
-                                document.getElementById("suggestions").remove();
                                 inputElement.value = address.display_name; // Update input with selection
                                 suggestionsDiv.innerHTML = ''; // Hide suggestions after selection
                                 // Populate other form fields with address components as needed
@@ -517,6 +517,9 @@ function nextQuestion(nextQuestionId) {
         document.getElementById("answer-text").parentElement.remove();
     }
     if (validateAnswer()) {
+        if (questions[currentQuestionIndex].address) {
+            document.getElementById("suggestions").remove();
+        }
         if (nextQuestionId) {
             const nextIndex = questions.findIndex(q => q.id === nextQuestionId);
             currentQuestionIndex = nextIndex;
