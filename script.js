@@ -175,7 +175,7 @@ const test_questions = [
     }
 ]
 
-testing = true;
+testing = false;
 if (testing) questions = test_questions;
 
 let currentQuestionIndex = 0;
@@ -522,6 +522,7 @@ function displayAddressSuggestions(suggestions, suggestionsDiv) {
         });
     });
 }
+
 function setupAddressStyles() {
     const style = document.createElement('style');
     style.textContent = `
