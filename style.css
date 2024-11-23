@@ -1,52 +1,86 @@
 body {
-    font-family: "Reddit Sans", sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  
-  #form-container {
-    max-width: 65%;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  #question-area {
-    margin-bottom: 10px;
-  }
-  
-  #answer-area {
-    margin-right: 10px;
-  }
-  
-  #answer-text {
-    min-width: 100%;
-    font-family: "Reddit Sans", sans-serif;
-  }
+  font-family: "Reddit Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
 
-  #progress-bar {
-    height: 10px;
-    background-color: #ddd;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
-  #progress-fill {
-    height: 100%;
-    background-color: #638065;
-    width: 0%;
-  }
-  
-  #next-button {
-    margin-top: 20px;
-    padding: 10px 30px;
-    background-color: #638065;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    max-height: fit-content;
-  }
+#form-header {
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+
+#form-container {
+  min-width: min-content;
+  max-width: 40vw;
+  min-height: min-content;
+  margin: 5% auto;
+  padding: 3vw 5vw;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#question-area {
+  margin-bottom: 1vw;
+}
+
+#current-question {
+  font-weight: bold;
+  margin-bottom: 0vw;
+}
+
+#answer-area {
+  padding-right: 10%;
+}
+
+#answer-text {
+  min-width: 100%;
+  font-family: "Reddit Sans", sans-serif;
+  padding: 10px;
+
+}
+
+#progress-bar {
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+#progress-fill {
+  height: 100%;
+  background-color: rgb(69, 119, 120);
+  width: 0%;
+}
+
+#next-button {
+  padding: 10px 30px;
+  background-color: rgb(69, 119, 120);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  max-height: fit-content;
+  font-family: "Reddit Sans", sans-serif;
+}
+
+#next-button:hover {
+  transition: background-color 0.3s ease;
+}
+
+#option-button {
+  padding: 10px 30px;
+  background-color: rgb(69, 119, 120);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  max-height: fit-content;
+  font-family: "Reddit Sans", sans-serif;
+}
+
+#review-input {
+  font-family: "Reddit Sans", sans-serif;
+  margin-bottom: 5px;
+}
